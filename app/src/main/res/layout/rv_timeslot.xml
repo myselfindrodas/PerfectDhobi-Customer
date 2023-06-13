@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/llslotbg"
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:gravity="center"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@drawable/grey_border_circle">
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="06:00 AM"
+            android:textColor="@color/grey_text"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textSize="@dimen/_8ssp" />
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

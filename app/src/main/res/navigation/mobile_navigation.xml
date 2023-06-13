@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.dhobi.perfectdhobi.ui.fragment.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+
+    <fragment
+        android:id="@+id/nav_wallet"
+        android:name="com.dhobi.perfectdhobi.ui.fragment.WalletFragment"
+        android:label="Wallet"
+        tools:layout="@layout/fragment_wallet" />
+
+
+    <fragment
+        android:id="@+id/nav_slotbook"
+        android:name="com.dhobi.perfectdhobi.ui.fragment.BookSlotFragment"
+        android:label="Slot Book"
+        tools:layout="@layout/fragment_book_slot" />
+
+    <fragment
+        android:id="@+id/nav_location"
+        android:name="com.dhobi.perfectdhobi.ui.fragment.LocationFragment"
+        android:label="Location"
+        tools:layout="@layout/fragment_location" />
+
+    <fragment
+        android:id="@+id/nav_address"
+        android:name="com.dhobi.perfectdhobi.ui.fragment.AddressFragment"
+        android:label="Location"
+        tools:layout="@layout/fragment_address" />
+    <fragment
+        android:id="@+id/nav_add_address"
+        android:name="com.dhobi.perfectdhobi.ui.fragment.AddAddressFragment"
+        android:label="Location"
+        tools:layout="@layout/fragment_add_address" />
+    <fragment
+        android:id="@+id/nav_bulk_order"
+        android:name="com.dhobi.perfectdhobi.ui.fragment.BulkOrderFragment"
+        android:label="Location"
+        tools:layout="@layout/fragment_bulk_order" />
+
+
+    <fragment
+        android:id="@+id/nav_review"
+        android:name="com.dhobi.perfectdhobi.ui.fragment.ReviewsFragment"
+        android:label="Reviews"
+        tools:layout="@layout/fragment_reviews" />
+
+
+    <fragment
+        android:id="@+id/nav_myorder"
+        android:name="com.dhobi.perfectdhobi.ui.fragment.MyOrderFragment"
+        android:label="My Orders"
+        tools:layout="@layout/fragment_my_order" />
+
+
+
+    <fragment
+        android:id="@+id/nav_notification"
+        android:name="com.dhobi.perfectdhobi.ui.fragment.NotificationFragment"
+        android:label="Notification"
+        tools:layout="@layout/fragment_notification" />
+
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.dhobi.perfectdhobi.ui.fragment.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+
+    <fragment
+        android:id="@+id/nav_ratechart"
+        android:name="com.dhobi.perfectdhobi.ui.fragment.RateChartFragment"
+        android:label="Rate Chart"
+        tools:layout="@layout/fragment_rate_chart" />
+
+
+
+    <fragment
+        android:id="@+id/nav_support"
+        android:name="com.dhobi.perfectdhobi.ui.fragment.SupportFragment"
+        android:label="Help Support"
+        tools:layout="@layout/fragment_support" />
+
+
+
+    <fragment
+        android:id="@+id/nav_faq"
+        android:name="com.dhobi.perfectdhobi.ui.fragment.FAQFragment"
+        android:label="FAQ"
+        tools:layout="@layout/fragment_f_a_q" />
+
+
+
+    <fragment
+        android:id="@+id/nav_coupon"
+        android:name="com.dhobi.perfectdhobi.ui.fragment.MyCouponsFragment"
+        android:label="My Coupon"
+        tools:layout="@layout/fragment_my_coupons" />
+
+
+
+
+
+    <fragment
+        android:id="@+id/nav_refferal"
+        android:name="com.dhobi.perfectdhobi.ui.fragment.RefferEarnFragment"
+        android:label="Reffer and Earn"
+        tools:layout="@layout/fragment_reffer_earn" />
+
+
+
+    <fragment
+        android:id="@+id/nav_orderdetails"
+        android:name="com.dhobi.perfectdhobi.ui.fragment.OrderDetailsFragment"
+        android:label="Order Details"
+        tools:layout="@layout/fragment_order_details" />
+
+
+
+    <fragment
+        android:id="@+id/nav_ordersummery"
+        android:name="com.dhobi.perfectdhobi.ui.fragment.OrderSummeryFragment"
+        android:label="Order Summery"
+        tools:layout="@layout/fragment_order_summery" />
+
+
+
+
+    <fragment
+        android:id="@+id/nav_orderplaced"
+        android:name="com.dhobi.perfectdhobi.ui.fragment.OrderPlacedFragment"
+        android:label="Order Summery"
+        tools:layout="@layout/fragment_order_placed" />
+
+
+
+    <fragment
+        android:id="@+id/nav_transcations"
+        android:name="com.dhobi.perfectdhobi.ui.fragment.TransactionsFragment"
+        android:label="Transactions"
+        tools:layout="@layout/fragment_transactions" />
+
+
+
+    <fragment
+        android:id="@+id/nav_transcationsdetails"
+        android:name="com.dhobi.perfectdhobi.ui.fragment.TranscationDetailsFragment"
+        android:label="Transactions Details"
+        tools:layout="@layout/fragment_transcation_details" />
+
+
+
+    <fragment
+        android:id="@+id/nav_viewallslots"
+        android:name="com.dhobi.perfectdhobi.ui.fragment.SlotBookedFragment"
+        android:label="View all booked slots"
+        tools:layout="@layout/fragment_slot_booked" />
+
+</navigation>

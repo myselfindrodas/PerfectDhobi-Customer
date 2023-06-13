@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@drawable/top_rounded_white_bg_btn"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/txtItem1"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:padding="16dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/dp"/>
+
+    <TextView
+        android:id="@+id/txtItem2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Gregory J. Mather"
+        android:textSize="@dimen/_14ssp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/black"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How would you rate our service"
+        android:textSize="@dimen/_14ssp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/blue"/>
+
+    <uz.jamshid.library.ExactRatingBar
+        android:id="@+id/rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:starCount="5"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:isIndicator="false"
+        app:starFillColor="@color/yellow"
+        app:starSize="25"
+        app:starValue="3.5" />
+
+
+    <LinearLayout
+        android:id="@+id/llNotesList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:visibility="visible"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editTextbugDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/rounded_white_bg_edit_text"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="top"
+            android:hint="Add your comment"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey_text2"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </LinearLayout>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_55sdp"
+        android:layout_marginEnd="@dimen/_55sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:background="@drawable/gradientblue"
+        android:fontFamily="@font/poppins_regular"
+        android:text="SUBMIT"
+        android:textColor="@color/white"
+        android:id="@+id/btnAddAddress"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_12ssp" />
+
+</LinearLayout>
+</LinearLayout>

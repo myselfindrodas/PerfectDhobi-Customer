@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Perfect Dhobi</string>
+
+    <string name="ok">OK</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="maybe">Maybe</string>
+    <string name="cancelled">Cancelled</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!--    <string name="api_key">AIzaSyCGRQavtVfIlnBuSkELe98R2MFjXQdnLRc</string>-->
+    <string name="api_key">AIzaSyCdU3nhLYoMIabTwPgEpprd2GwJ2NjXvDo</string>
+    <string name="refer_amp_earn"><![CDATA[Refer & Earn]]></string>
+    <string name="helps_amp_support"><![CDATA[Helps & Support]]></string>
+    <string name="refer_earn"><![CDATA[Refer & Earn]]></string>
+    <string name="helps_support"><![CDATA[Helps & Support]]></string>
+
+</resources>

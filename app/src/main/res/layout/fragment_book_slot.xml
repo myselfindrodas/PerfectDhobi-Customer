@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.fragment.BookSlotFragment">
+
+
+        <include
+            android:id="@+id/topnav"
+            layout="@layout/layout_topnav2" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topnav"
+            android:nestedScrollingEnabled="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/topnav"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_15sdp"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/btnPickupslot"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Pickup Slot"
+                            android:textAlignment="center"
+                            android:textColor="@color/teal_700"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:background="@android:color/darker_gray" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_15sdp"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/btnDeliveryslot"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Delivery Slot"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:background="@android:color/darker_gray" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:background="@color/white_light"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Select Date"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12ssp" />
+
+
+
+                    <TextView
+                        android:id="@+id/tvMonth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Apr 2022"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:drawableRight="@drawable/ic_down"
+                        android:layout_alignParentRight="true"
+                        android:drawableTint="@color/teal_700"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10ssp" />
+
+
+                </RelativeLayout>
+
+
+                <com.kizitonwose.calendar.view.WeekCalendarView
+                    android:id="@+id/exSevenCalendar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cv_dayViewResource="@layout/example_7_calendar_day"
+                    app:cv_daySize="seventhWidth"
+                    app:cv_orientation="horizontal" />
+
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:layout_width="@dimen/_55sdp"-->
+<!--                    android:layout_height="@dimen/_65sdp"-->
+<!--                    app:cardCornerRadius="@dimen/_10sdp"-->
+<!--                    android:layout_margin="@dimen/_10sdp"-->
+<!--                    app:cardElevation="0dp">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:background="@color/sky"-->
+<!--                        android:orientation="vertical">-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:fontFamily="@font/poppins_medium"-->
+<!--                            android:text="Mon"-->
+<!--                            android:layout_marginTop="@dimen/_5sdp"-->
+<!--                            android:textAlignment="center"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textSize="@dimen/_12ssp" />-->
+
+
+
+<!--                        <TextView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:fontFamily="@font/poppins_medium"-->
+<!--                            android:text="21"-->
+<!--                            android:layout_marginTop="@dimen/_15sdp"-->
+<!--                            android:textAlignment="center"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textSize="@dimen/_12ssp" />-->
+
+
+<!--                    </LinearLayout>-->
+
+
+
+<!--                </androidx.cardview.widget.CardView>-->
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@color/white_light"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Select Slot"
+                        android:gravity="center"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12ssp" />
+
+
+
+
+
+                </RelativeLayout>
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120sdp"
+                    app:cardCornerRadius="@dimen/_10sdp"
+                    app:cardElevation="0dp"
+                    android:layout_margin="@dimen/_15sdp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/washbg"/>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/llOTPLayout"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnMorning"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:background="@drawable/grey_blue_rounded"
+                        android:textColor="@color/white"
+                        android:text="Morning"
+                        android:textAllCaps="false"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:textAlignment="center"
+                        android:layout_weight="1"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnAfternoon"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:background="@drawable/grey_sky_rounded"
+                        android:textColor="@color/black"
+                        android:text="Afternoon"
+                        android:textAllCaps="false"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:textAlignment="center"
+                        android:layout_weight="1"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnEvening"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:background="@drawable/grey_sky_rounded"
+                        android:textColor="@color/black"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:text="Evening"
+                        android:textAllCaps="false"
+                        android:textAlignment="center"
+                        android:layout_weight="1"/>
+
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_15sdp"
+                    android:id="@+id/rvTimeslot"/>
+
+
+                <LinearLayout
+                    android:id="@+id/llrecurringslot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@color/white_light"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Select Option"
+                            android:gravity="center"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12ssp" />
+
+
+
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btnDaily"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:background="@drawable/rounded_border_grey_btn"
+                            android:textColor="@color/grey_text"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Daily"
+                            android:textSize="@dimen/_10sdp"
+                            android:textAllCaps="false"
+                            android:layout_margin="@dimen/_7sdp"
+                            android:textAlignment="center"
+                            android:layout_weight="1"/>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btnOnceaweek"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:background="@drawable/rounded_border_grey_btn"
+                            android:textColor="@color/grey_text"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Once a Week"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_10sdp"
+                            android:layout_margin="@dimen/_7sdp"
+                            android:textAlignment="center"
+                            android:layout_weight="1"/>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btnTwiceaweek"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:background="@drawable/rounded_border_grey_btn"
+                            android:textColor="@color/grey_text"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Twice a Week"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_10sdp"
+                            android:layout_margin="@dimen/_7sdp"
+                            android:textAlignment="center"
+                            android:layout_weight="1"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnNext"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_marginStart="@dimen/_75sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_25sdp"
+                    android:layout_marginEnd="@dimen/_75sdp"
+                    android:background="@drawable/gradientblue"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="NEXT"
+                    android:textColor="@color/white" />
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+</layout>
